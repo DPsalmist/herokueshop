@@ -13,7 +13,7 @@ SECRET_KEY = 'm_1n^kl^8h+$p3hqro)i@90q4y300t!*j75fon#hp!t=#dw&2e'
 # SECURITY WARNING: don't run with debug turned on in production!
 #DEBUG = os.getenv("DEBUG", "False") == "True"
 DEBUG = True
-ALLOWED_HOSTS = ['sd-ecommerce.herokuapp.com', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['sodcommerce.herokuapp.com', '127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -114,10 +114,9 @@ STATIC_URL = '/static/'
 STATICFILES_DIR = 'BASE_DIR /static'
 #STATICFILES_DIR = (os.path.join(BASE_DIR, 'static')
 
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 CART_SESSION_ID = 'cart'
-
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
