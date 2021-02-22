@@ -12,8 +12,8 @@ SECRET_KEY = 'm_1n^kl^8h+$p3hqro)i@90q4y300t!*j75fon#hp!t=#dw&2e'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 #DEBUG = os.getenv("DEBUG", "False") == "True"
-DEBUG = False
-ALLOWED_HOSTS = ['sd-ecommerce.herokuapp.com', '127.0.0.1']
+DEBUG = True
+ALLOWED_HOSTS = ['sd-ecommerce.herokuapp.com', '127.0.0.1', 'localhost']
 
 
 # Application definition
